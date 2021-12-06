@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* ----------------------------------------- */
+/* CARD MAIN */
+/* ----------------------------------------- */
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  width: 34rem;
+  border-radius: 1.2rem;
+}
+
+.card__img-back {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+#image-link {
+  display: block;
+}
+
+.card__img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+
+/* ----------------------------------------- */
+/* CARD VIEW IMAGE */
+/* ----------------------------------------- */
+.card__view-back {
+  background-color: hsl(178, 100%, 50%, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 7rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+#image-link:hover .card__view-back {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__view-icon {
+  width: 4.5rem;
+}
+
+/* ----------------------------------------- */
+/* CARD CONTENT */
+/* ----------------------------------------- */
+.card__heading {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  margin: 2rem 0;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.card__heading:hover {
+  color: hsl(215, 51%, 70%);
+}
+
+.card__paragraph {
+  color: hsla(215, 52%, 70%, 0.719);
+}
+
+.card__inner-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card__price,
+.card__days {
+  display: flex;
+  align-items: center;
+}
+
+.card__icon {
+  margin-right: 1rem;
+}
+
+.card__icon--price {
+  width: 1rem;
+}
+
+.card__icon--days {
+  width: 1.5rem;
+}
+
+.card__price--text,
+.card__days--text {
+  font-size: 1.6rem;
+}
+
+.card__price--text {
+  font-weight: 600;
+  color: hsl(215, 51%, 70%);
+}
+
+.card__days--text {
+  color: hsla(215, 52%, 70%, 0.719);
+}
+
+.card__content {
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+/* ----------------------------------------- */
+/* CARD PROFILE */
+/* ----------------------------------------- */
+.card__profile {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card__profile--img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.card__profile--name {
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.card__profile--name:hover {
+  color: hsl(215, 51%, 70%);
+}
+
+.card__profile--text {
+  color: hsla(215, 52%, 70%, 0.719);
+}

@@ -19,7 +19,7 @@ Design a NFT preview card (frontendmentor challenge)
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://frontendparham.github.io/Stats-Preview-Card/)
+- Live Site URL: [GitHub Pages](https://frontendparham.github.io/nft-preview-card-component/)
 
 ## My process
 
